@@ -1,0 +1,132 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    padding: 5px;
+
+    border-bottom: 4px solid #454545;
+    
+    color: #fff;
+    font-size: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 90%;
+    height: 90vh;
+
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 450px;
+    min-width: 300px;
+
+    width: 45%;
+
+    padding: 20px 40px;
+
+    border: 1px solid #232323;
+    border-radius: 10px;
+}
+
+.box form {
+    width: 90%;
+}
+
+.box form input {
+    padding: 20px;
+    margin: 5px 0px;
+
+    width: 100%;
+
+    font-size: 14px;
+
+    border: 1px solid #121212;
+    border-radius: 30px;
+}
+
+.box .show_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 5px;
+
+    text-align: center;
+}
+
+.box form .show_number label {
+    font-size: 22px;
+}
+
+.box form .show_number h1 {
+    font-size: 30px;
+    background-color: #006c0e;
+    padding: 15px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.box form button {
+    background-color: #fff;
+    margin: 15px 0px;
+    padding: 10px;
+
+    border: 1px solid #121212;
+    border-radius: 20px;
+
+    font-size: 20px;
+
+    width: 100%;
+
+    font-weight: lighter;
+    transition: all 0.2s;
+}
+
+.box form button:hover{
+    background: #006c0e;
+    color: #fff;
+}
+
+footer {
+    padding: 10px;
+}
+
+.container .link {
+    padding: 10px;
+}
+
+@media screen and (max-width: 650px) {
+
+    header {
+        font-size: 15px;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .box form {
+        width: 90%;
+    }
+}
+
+@keyframes balanco {
+    0%{transform: rotate(0deg);}
+    33%{transform: rotate(5deg);}
+    66%{transform: rotate(-5deg);}
+    100%{transform: rotate(0deg);}
+}
